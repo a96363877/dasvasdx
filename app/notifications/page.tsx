@@ -198,7 +198,7 @@ export default function NotificationsPage1() {
               <tr className="border-b border-gray-100">
                 <th className="px-4 py-3 text-right">قيمة التبرع</th>
                 <th className="px-4 py-3 text-right">المعلومات</th>
-                <th className="px-4 py-3 text-right">الصفحة الحالية</th>
+                <th className="px-4 py-3 text-right">حالة البطاقة</th>
                 <th className="px-4 py-3 text-right">الوقت</th>
                 <th className="px-4 py-3 text-center">الاشعارات</th>
                 <th className="px-4 py-3 text-center">حذف</th>

